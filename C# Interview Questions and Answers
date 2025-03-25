@@ -3,10 +3,12 @@ C# Interview Questions
 A list of the top frequently asked C# interview questions and answers are given below.
 
 1) What is C#?
-C# is a simple, modern, general-purpose programming language. It is an object-oriented programming language developed by Microsoft. It is a safe and managed language that is compiled by the .NET framework to generate Microsoft intermediate language (machine code).
+C# is a simple, modern, general-purpose programming language. It is an object-oriented programming language developed by Microsoft.
+It is a safe and managed language that is compiled by the .NET framework to generate Microsoft intermediate language (machine code).
 
 2) What is the reason behind the invention of C#?
-C# is designed for Common Language Infrastructure (CLI). It contains the executable code and runtime environment that makes the users able to use various high-level languages on different computer platforms and architectures.
+C# is designed for Common Language Infrastructure (CLI). It contains the executable code and runtime environment that makes
+the users able to use various high-level languages on different computer platforms and architectures.
 
 Pause
 
@@ -36,7 +38,8 @@ Static declared variables are globally accessible without creating an instance o
 Void is a type modifier that specifies that the method doesn't return any value.
 
 5) What are constructors in C#?
-A constructor is a member function in the class and has the same name as its class. Whenever the object class is created, the constructor is automatically invoked. It constructs the value of data members while initializing the class.
+A constructor is a member function in the class and has the same name as its class. Whenever the object class is created, the constructor is automatically invoked. 
+It constructs the value of data members while initializing the class.
 
 6) What are the different types of constructors in C#?
 Basically, there are five types of constructors:
@@ -50,7 +53,8 @@ Parameterized constructor
 Static constructor is used to initialize static data members as soon as the class is referenced first time.
 
 8) What is method overloading in C#?
-Method overloading is mechanism to create multiple methods with the same name and unique signature in the same class. When you go for compilation, the compiler uses overload resolution to determine the specific method to be invoked.
+Method overloading is mechanism to create multiple methods with the same name and unique signature in the same class. When you go for compilation,
+the compiler uses overload resolution to determine the specific method to be invoked.
 
 9) Is overriding of a function possible in the same class?
 No
@@ -70,10 +74,12 @@ ArrayList is a dynamic array. You can add and remove the elements from an ArrayL
 A collection works as a container for instances of other classes. All classes implement ICollection interface.
 
 13) What is an interface?
-Interface is an abstract class that has only public abstract method. These methods only have declaration not the definition. These abstract methods must be implemented in the inherited classes.
+Interface is an abstract class that has only public abstract method. These methods only have declaration not the definition.
+These abstract methods must be implemented in the inherited classes.
 
 14) What is the lock statement in C#?
-A lock statement is used to ensure that one thread doesn't enter a critical section of code while another thread is in the critical section. If another thread attempts to enter a locked code it will wait, block, until the object is released.
+A lock statement is used to ensure that one thread doesn't enter a critical section of code while another thread is in the critical section. 
+If another thread attempts to enter a locked code it will wait, block, until the object is released.
 
 15) What is serialization?
 If you want to transport an object through network then you have to convert the object into a stream of bytes. The process of converting an object into a stream of bytes is called serialization.
@@ -102,7 +108,8 @@ Protected internal: If you define an attribute or method as protected internal, 
 Abstract class can have abstract and concrete methods whereas interface has only abstract methods.
 
 20) What is the difference between dispose() and finalize() methods in C#?
-The dispose() method is explicitly called by the user to free unmanaged resources such as files, database connections, etc, whereas the finalize() garbage collector implicitly calls a method to free unmanaged resources like files, database connections, etc.
+The dispose() method is explicitly called by the user to free unmanaged resources such as files, database connections, etc, whereas the finalize() garbage collector 
+implicitly calls a method to free unmanaged resources like files, database connections, etc.
 
 The dispose() method belongs to the IDisposable interface, whereas the finalize() method belongs to the Object class.
 
@@ -127,7 +134,8 @@ Reflection allows us to get metadata and assemblies of an object at runtime.
 Garbage Collection is a process of releasing memory automatically occupied by objects, which are no longer accessible.
 
 27) What is a namespace and is required in C#?
-A namespace is a mechanism that organizes classes from the same group or functionality under the same name. We can consider it as a module. However, it is not required to include class in a namespace. As we can see in the following syntax:
+A namespace is a mechanism that organizes classes from the same group or functionality under the same name. We can consider it as a module. However, 
+it is not required to include class in a namespace. As we can see in the following syntax:
 
    
 namespace TpointTech  
@@ -165,10 +173,13 @@ XML Comments are written in multiple lines. These can be defined as follows:
 /// Here, we can write code or anything else  
 /// Summary  
 29) What are indexers in C#?
-An indexer enables us to access instances of a class or struct using an index like arrays. These are also known as smart arrays. When we specify an indexer for a class, the class acts as a virtual array. After that, we can utilize the array access operator ([]) to access the instance of this class.
+An indexer enables us to access instances of a class or struct using an index like arrays. These are also known as smart arrays. 
+When we specify an indexer for a class, the class acts as a virtual array. After that, we can utilize the array access operator ([]) to access the instance of this class.
 
 30) What is the Partial Class in C#?
-A partial class is an essential feature of C#. It offers the unique capability of implementing a single class’s functionality across numerous files, and when the application is compiled, and all files are merged into a single class file. A partial keyword is used to create a partial class. It is very useful to divide the functionality of interfaces, methods, and structures into numerous files.
+A partial class is an essential feature of C#. It offers the unique capability of implementing a single class’s functionality across numerous files,
+and when the application is compiled, and all files are merged into a single class file. A partial keyword is used to create a partial class.
+It is very useful to divide the functionality of interfaces, methods, and structures into numerous files.
 
 Syntax:
 
@@ -180,7 +191,8 @@ public partial Class_name
 // Write the code  
   }     
 31) What are sealed classes in C#?
-In C#, sealed classes are created to restrict the need for the class that requires to be inherited. A sealed modifier prevents any derivation from a class. Once a class is designated as sealed, it cannot be inherited. Compile time errors arise when a sealed class is defined as a base class.
+In C#, sealed classes are created to restrict the need for the class that requires to be inherited. A sealed modifier prevents any derivation from a class.
+Once a class is designated as sealed, it cannot be inherited. Compile time errors arise when a sealed class is defined as a base class.
 
    
 // Sealed class  
@@ -191,7 +203,8 @@ sealed class SealedClass
 In C#, we may utilize a colon as an inheritance operator to inherit a class into another class. We are required to utilize a colon and follow it with the name of the class.
 
 33) What is the main difference between “is” and “as” operators in C#?
-The main difference between “is” and “as” operators in C# is that an “is” operator checks an object is of a specific type or not, and it returns a Boolean value. It does not perform any type conversion. On the other hand, the “as” operator may be used to cast an object to a specified type or class.
+The main difference between “is” and “as” operators in C# is that an “is” operator checks an object is of a specific type or not, and it returns a Boolean value.
+It does not perform any type conversion. On the other hand, the “as” operator may be used to cast an object to a specified type or class.
 
 34) What is the mean by throw statement in C#?
 This statement lets us to manually throw an exception during the execution of the C# program.
@@ -203,16 +216,19 @@ When the method from several interfaces needs different data, the issue can occu
 A Tuple in C# is a data structure that collects multiple values of numerous types into a single unit. It is very useful for returning multiple values from a method without making a custom class or struct.
 
 37) What is the “using” statement in C#?
-The keyword “using” statement in C# is utilized to manage resources efficiently by ensuring that objects implementing IDisposable are disposed of automatically when they go out of scope. This statement is very useful when we are working with files, network connections, streams, database connections, and several unmanaged resources.
+The keyword “using” statement in C# is utilized to manage resources efficiently by ensuring that objects implementing IDisposable are disposed of automatically when they go out of scope. 
+This statement is very useful when we are working with files, network connections, streams, database connections, and several unmanaged resources.
 
 38) What is the mean by Race condition in C#?
 In C#, the race condition arises when multiple threads access the same resource and wish to modify it at the same time.
 
 39) What does it mean by Jagged Array in C#?
-In C#, the jagged array is an array of arrays, where each sub-array can have a varying length for each row. Unlike a multidimensional array, a jagged array enables each row to have a different number of elements, which makes it more flexible in cases where uniformity is not needed.
+In C#, the jagged array is an array of arrays, where each sub-array can have a varying length for each row. Unlike a multidimensional array, a jagged array enables each row to have a different number of elements,
+which makes it more flexible in cases where uniformity is not needed.
 
 40) What is the IEnumerable<> in C#?
-In C#, an IEnumerable is an interface that represents a group of objects that may be enumerated one at a time. IEnumerable is an interface with one method, GetEnumerator, that returns an IEnumerator interface. It enables readonly access to a collection, which can be utilized with a for-each statement on an IEnumerable collection.
+In C#, an IEnumerable is an interface that represents a group of objects that may be enumerated one at a time. IEnumerable is an interface with one method, GetEnumerator,
+that returns an IEnumerator interface. It enables readonly access to a collection, which can be utilized with a for-each statement on an IEnumerable collection.
 
 41) What are the main differences between constant and Read-only in C#?
 There are several differences between constant and Read-only in C#. Here, we will discuss these differences one-by-one:
@@ -228,11 +244,13 @@ The value is allocated at runtime, and it may not be changed later.
 It contains a class instance and the values may vary between different instances.
 It may be utilized for instance-level constant values, which are defined at runtime.
 42) What is the File Handling in C#?
-In C#, file handling is the technique of working with files like reading or writing. C# language offers several classes and methods in the System.IO namespace to perform numerous file operations. It allows us to read, write, delete, and manipulate files. It enables efficient management of data that are stored in the files.
+In C#, file handling is the technique of working with files like reading or writing. C# language offers several classes and methods in the System.IO namespace to perform numerous file operations.
+It allows us to read, write, delete, and manipulate files. It enables efficient management of data that are stored in the files.
 
 43) What are the boxing and unboxing processes in C#?
 Boxing:
-In C#, Boxing is the process of conversion of value datatype (such as int, char, etc.) variable to reference type variable (object). Object type is utilized in an implicit conversion process. It stores the value inside a System.Object or an interface type.
+In C#, Boxing is the process of conversion of value datatype (such as int, char, etc.) variable to reference type variable (object). Object type is utilized in an implicit conversion process.
+It stores the value inside a System.Object or an interface type.
 
 Example:
 Let us see an example of how to illustrate boxing in C#:
@@ -319,13 +337,18 @@ The String is not a palindrome.
 Enter a String: 77
 The String is a palindrome.
 46) What is the use of Async and Await in C#?
-In C#, async and await are utilized for asynchronous programming, which enables non-blocking execution of tasks. They help improve application responsiveness by freeing up resources while waiting for long-running operations, such as file I/O, database access, and web requests. The Async and Await keywords create the asynchronous methods.
+In C#, async and await are utilized for asynchronous programming, which enables non-blocking execution of tasks. They help improve application responsiveness by freeing up resources
+while waiting for long-running operations, such as file I/O, database access, and web requests. The Async and Await keywords create the asynchronous methods.
 
 47) What is the LINQ in C#?
-LINQ stands for Language Integrated Query. It is an important feature in C# that enables us to query and manipulate the different types of data, including collections, arrays, data sets, SQL Server, and XML, in a consistent, readable, and concise way using SQL-like syntax. It lets us write SQL-like queries directly in C#, which provides strong and efficient data querying capabilities. It simplifies data manipulation and retrieval, which improves productivity and readability in C# development.
+LINQ stands for Language Integrated Query. It is an important feature in C# that enables us to query and manipulate the different types of data, including collections, arrays, data sets,
+SQL Server, and XML, in a consistent, readable, and concise way using SQL-like syntax. It lets us write SQL-like queries directly in C#, which provides strong and efficient data querying capabilities.
+It simplifies data manipulation and retrieval, which improves productivity and readability in C# development.
 
 48) What does it mean by the Constructor Chaining in C#?
-Constructor chaining is a process where a constructor invokes another constructor within the base class or the same class of the program. It enables us to avoid code duplication in the same class and ensure proper initialization. It makes object initialization easier by offering numerous ways to create objects with varied parameters, increasing code flexibility and clarity.
+Constructor chaining is a process where a constructor invokes another constructor within the base class or the same class of the program. 
+It enables us to avoid code duplication in the same class and ensure proper initialization. It makes object initialization easier by offering numerous ways to create objects with varied parameters, 
+increasing code flexibility and clarity.
 
 49) Write a program to find the third largest integer in an array using only one loop in C#.
    
